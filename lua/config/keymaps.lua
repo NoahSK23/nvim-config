@@ -8,5 +8,5 @@ local keymap = vim.keymap
 keymap.set("n", "ga", "ggVG", { desc = "Select all" })
 
 --- Center cursor when moving down/up half-page
-keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Jump half page down" })
-keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Jump half page up" })
+-- keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Jump half page down" })
+-- keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Jump half page up" })
