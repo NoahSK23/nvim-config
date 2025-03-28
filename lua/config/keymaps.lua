@@ -7,6 +7,9 @@ local keymap = vim.keymap
 --- Select all text
 keymap.set("n", "ga", "ggVG", { desc = "Select all" })
 
+--- Use alt/option backspace to delete word in insert mode
+keymap.set("i", "<M-BS>", "<C-W>", { noremap = true, silent = true })
+
 --- Center cursor when moving down/up half-page
 -- keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Jump half page down" })
 -- keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Jump half page up" })
