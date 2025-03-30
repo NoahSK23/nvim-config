@@ -13,6 +13,11 @@ keymap.set("i", "<M-BS>", "<C-W>", { noremap = true, silent = true })
 --- Exit insert mode with jk
 keymap.set("i", "jk", "<ESC>", { noremap = false })
 
+--- Go to buffer at position
+for i = 1, 9 do
+  keymap.set("n", "g" .. i, "<Cmd>BufferLineGoToBuffer " .. i .. "<CR>", { desc = "Go to buffer " .. i })
+end
+
 --- Center cursor when moving down/up half-page
 -- keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Jump half page down" })
 -- keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Jump half page up" })
