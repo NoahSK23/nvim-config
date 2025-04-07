@@ -10,8 +10,9 @@ keymap.set("n", "ga", "ggVG", { desc = "Select all" })
 --- Use alt/option backspace to delete word in insert mode
 keymap.set("i", "<M-BS>", "<C-W>", { noremap = true, silent = true })
 
---- Exit insert mode with jk
-keymap.set("i", "jk", "<ESC>", { noremap = false })
+--- Exit insert mode with jk and jj
+keymap.set("i", "jk", "<ESC>", { noremap = false, desc = "Exit insert mode" })
+keymap.set("i", "jj", "<ESC>", { noremap = false, desc = "Exit insert mode" })
 
 --- Go to buffer at position
 for i = 1, 9 do
